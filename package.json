@@ -5,14 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently \"cd first_component && node index.js\" \"node index.js\" \"cd second_component && node index.js\""
+    "start": "concurrently \"cd first_component && node index.js\" \"node index.js\" \"cd second_component && node index.js\" \"cd third_component && node index.js\""
   },
   "author": "Maximilian Schmidt",
   "license": "ISC",
   "dependencies": {
     "concurrently": "^5.3.0",
-    "jsdom": "^16.4.0",
-    "node-fetch": "^2.6.1"
+    "got": "^11.8.1",
+    "jsdom": "^16.4.0"
   },
   "type": "module"
 }
