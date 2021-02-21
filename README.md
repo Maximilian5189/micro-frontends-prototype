@@ -2,9 +2,11 @@
 This is a basic prototype consisting of a composer service and several micro frontend components.
 
 ## Prerequisites
-`Node.js` and `Go` have to be installed.
+`Node.js` and `Go` have to be installed. If you want to build the react component (fourth component), `yarn` is required.
 ## Set up the project
 Run `npm install` in the root directory.
+
+To build the react component, navigate to the respective folder `cd fourth-component` and run `build.sh` (works only on macOS currently).
 
 ## Run the project
 Run `npm start` in the root directory, this will start the composer service and all components. The composer listens on `localhost:9000`.

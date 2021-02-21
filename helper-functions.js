@@ -1,7 +1,8 @@
 import got from 'got';
+import { JSDOM } from 'jsdom';
 
-// bug: attached newely wih every request
 export const setJavaScript = async (childNode, document) => {
+  // todo: maybe allow async javascript via className
   if (childNode?.className?.includes('javascript')) {
     const scriptElement = document.createElement('script');
     scriptElement.type = 'application/javascript';
@@ -17,15 +18,11 @@ export const setInnerHTML = async (childNode, document) => {
   const link = `http://localhost:${9000 + fragmentNumber}`;
   const response = await got(link);
 
-  // bug: attached newely wih every request
-  // todo: not the full body is received for react
   const innerHTML = response.body;
   if (childNode?.className?.includes('react')) {
     const domReact = new JSDOM(innerHTML);
     const documentReact = domReact.window?.document;
-    documentReact.body.childNodes.forEach(reactChildNode => {
-      childNode.appendChild(reactChildNode)
-    });
+    childNode.appendChild(documentReact.body)
     documentReact.head.childNodes.forEach(reactChildNode => {
       if (reactChildNode.rel === 'stylesheet') {
         document.head.appendChild(reactChildNode);
