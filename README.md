@@ -1,6 +1,8 @@
 # Micro frontends prototype
 This is a basic prototype consisting of a composer service and several micro frontend components.
 
+## Prerequisites
+`Node.js` and `Go` have to be installed.
 ## Set up the project
 Run `npm install` in the root directory.
 
@@ -21,6 +23,6 @@ http.createServer(function (req, res) {
 }).listen(port); 
 ```
 
-In addition, add a new fragment to `./domRaw.js`. The fragment number will determine the port number where the composer service will look for the component, so make sure these are matching (e.g. `fragment4` and `port = 9004`).
+In addition, add a new fragment to `./dom.js`. The fragment number will determine the port number where the composer service will look for the component, so make sure these are matching (e.g. `fragment4` and `port = 9004`).
   
 If the component should be started automatically, add it to the start script in `package.json`.

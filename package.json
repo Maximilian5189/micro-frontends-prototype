@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently \"cd first-component && node index.js\" \"node index.js\" \"cd second-component && node index.js\" \"cd third-component && node index.js\""
+    "start": "concurrently \"cd first-component && node index.js\" \"node index.js\" \"cd second-component && go run server.go\" \"cd third-component && node index.js\""
   },
   "author": "Maximilian Schmidt",
   "license": "ISC",
