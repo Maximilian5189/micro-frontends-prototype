@@ -2,7 +2,7 @@
 This is a basic prototype consisting of a composer service and several micro frontend components.
 
 ## Prerequisites
-`Node.js` and `Go` have to be installed. If you want to build the react component (fourth component), `yarn` is required.
+`Node.js` (Version 14 or newer) and `Go` have to be installed. If you want to build the react component (fourth component), `yarn` is required.
 ## Set up the project
 Run `npm install` in the root directory.
 
