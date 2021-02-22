@@ -6,7 +6,7 @@ This is a basic prototype consisting of a composer service and several micro fro
 ## Set up the project
 Run `npm install` in the root directory.
 
-To build the react component, navigate to the respective folder `cd fourth-component` and run `build.sh` (works only on macOS currently).
+To build the react component, navigate to the respective folder `cd fourth-component` and run `build.sh`.
 
 ## Run the project
 Run `npm start` in the root directory, this will start the composer service and all components. The composer listens on `localhost:9000`.
