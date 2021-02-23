@@ -3,7 +3,7 @@ cd react-app
 npm install
 yarn build
 searchstring=/static
-if [ $1 == 'production' ] 
+if [ "$1" == "production" ] 
 then
   replacestring=http://my-backend.ddns.net:9004/static
 else
