@@ -1,6 +1,8 @@
 # Micro frontends prototype
 This is a basic prototype consisting of a composer service and several micro frontend components.
 
+##
+Live demo: `http://my-backend.ddns.net:9000`
 ## Prerequisites
 `Node.js` (Version 14 or newer) and `Go` have to be installed. If you want to build the react component (fourth component), `yarn` is required.
 ## Set up the project
