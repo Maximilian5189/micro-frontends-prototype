@@ -10,7 +10,7 @@ export const setJavaScript = async (childNode, document) => {
     scriptElement.type = 'application/javascript';
     const fragmentNumber = Number(childNode.id.replace('fragment', ''));
     const link = `${baseUrl}${9000 + fragmentNumber}`;
-    scriptElement.src = `${link}/script.js`;
+    scriptElement.src = `${link}/static/script.js`;
     document.body.appendChild(scriptElement);
   }
 };
