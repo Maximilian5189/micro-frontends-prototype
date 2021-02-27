@@ -12,7 +12,7 @@ div {text-align: center}
 </head>
 <body>
 <div id="fragment1" class="javascript"></div>
-<div id="fragment2"></div>
+<div id="fragment2" class="javascript"></div>
 <div id="fragment3" class="javascript"></div>
 <div id="fragment4" class="react"></div>
 </body>`;
